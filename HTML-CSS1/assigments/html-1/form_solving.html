@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div class="container">
+        <div class="kisim1">
+          <div class="ad-soyad">
+            <label for="ad">Adi ---------------</label>
+            <input type="text" id="ad" name="ad" required />
+            <br />
+            <br />
+            <label for="soyad">Soyadi ---------------</label>
+            <input type="text" id="soyad" name="soyad" value="" required />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="cinsiyet">Cinsiyet --------------- </label>
+
+            <input type="radio" name="cinsiyet" value="bay" id="erkek" />
+            <label for="erkek">Bay</label>
+
+            <input type="radio" name="cinsiyet" id="bayan" value="bayan" />
+            <label for="bayan">Bayan</label>
+          </div>
+          <br />
+
+          <div>
+            <label for="ilce">Ilce ---------------</label>
+            <select name="ilceler" id="ilceler">
+              <optgroup label="Istanbul">
+                <option value="üsküdar">Üsküdar</option>
+                <option value="ümraniye">Ümraniye</option>
+                <option value="kadiköy">Kadiköy</option>
+                <option value="kagithane">Kagithane</option>
+                <option value="maltepe">Maltepe</option>
+              </optgroup>
+
+              <optgroup label="Samsun">
+                <option value="atakum">Atakum</option>
+                <option value="ilkadim">Ilkadim</option>
+                <option value="vezirköprü">Vetirköprü</option>
+                <option value="carsamba">Carsamba</option>
+                <option value="tekkeköy">Tekkeköy</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <br />
+
+          <div>
+            <label for="eposta">Eposta ---------------</label>
+            <input type="text" name="eposta" id="eposta" value="" />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="kisisel_site">Kisisel Site ---------------</label>
+            <input type="text" name="kisisel_site" id="kisisel_site" value="" />
+          </div>
+
+          <br />
+
+          <div>
+            <label for="tel">Telefon ---------------</label>
+            <input type="number" name="tel" id="tel" value="" />
+          </div>
+        </div>
+
+        <br />
+
+        <div class="kisim2">
+          <form action="">
+            <div class="container">
+              <div>
+                <label for="hobiler">Hobiler ---------------</label>
+
+                <input
+                  type="checkbox"
+                  name="hobiler"
+                  id="futbol"
+                  value="futbol"
+                />
+
+                <label for="futbol"> Futbol</label>
+
+                <br />
+
+                <label for="">-------------------------</label>
+                <input
+                  type="checkbox"
+                  name="hobiler"
+                  id="voleybol"
+                  value="voleybol"
+                />
+
+                <label for="voleybol">Voleybol</label>
+                <br />
+
+                <label for="">-------------------------</label>
+                <input
+                  type="checkbox"
+                  name="hobiler"
+                  id="basketbol"
+                  value="basketbol"
+                />
+                <label for="basketbol">Basketbol</label>
+              </div>
+
+              <br />
+
+              <div>
+                <label for="profil_fotograf"
+                  >Profil Fotografi ---------------</label
+                >
+                <input
+                  type="file"
+                  name="profil_foto"
+                  id="profil_fotografi"
+                  value=""
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

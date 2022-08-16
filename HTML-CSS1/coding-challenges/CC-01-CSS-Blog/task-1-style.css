@@ -1,0 +1,17 @@
+.container {
+  width: 70%;
+  margin: auto;
+  background-color: rgb(196, 128, 46);
+  border: solid blue 2px;
+  display: flex;
+}
+
+img {
+  width: 320px;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+.text {
+  margin: 5px;
+}
