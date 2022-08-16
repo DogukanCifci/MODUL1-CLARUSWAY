@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iFrame</title>
+  </head>
+  <body>
+    <h1>iFRAME</h1>
+    <div>
+      <audio controls src="../assets/muzik.mp3"></audio>
+      <!-- controls kelimesi web sayfasinda görünür olmasini sagliyor-->
+      <!-- autoplay sayfa yenilendiginde otomatik olarak calismasini saglar-->
+    </div>
+
+    <div>
+      <video autoplay controls src="../assets/Su.mp4"></video>
+    </div>
+    <hr />
+    <h3>Youtubedan video ekleme</h3>
+    <div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/eBPgGPt0RrY"
+        title="YouTube video player"
+        frameborder="3"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- allow="accelerometer" : videonun hizinda degisiklik yapabilmeye izin verir-->
+    <!-- frameborder : cerceve koyar default degeri 0dir -->
+    <!-- allowfullscreen videoyu full ekran yapabilmeye yarar-->
+    <!-- picture in picture bildigim özellik . onu yapmaya izin verir-->
+    <!-- Kendi ekledigimiz videoalara da bu özellikleri koyabilirim-->
+    <hr />
+    <h3>
+      Direk bir webstieyi de bu sekilde kendi sitemiz icinde gösterebiliriz
+    </h3>
+    <div>
+      <iframe
+        src="https://clarusway.com/"
+        frameborder="0"
+        width="80%"
+        height="400px"
+      ></iframe>
+    </div>
+  </body>
+</html>
