@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HARITA</title>
+  </head>
+  <body>
+    <h2>Photo Mapping</h2>
+    <p>
+      Click on the cities of
+      <strong>Antalya</strong>
+      <strong>Izmir</strong>
+      <strong>Istanbul</strong>
+      and get information about them
+    </p>
+
+    <img src="./harita.png" alt="Harita" width="80%" usemap="#turkeymap" />
+    <!-- usemap komutunu daha sonra inceleyecek birisi hartilandirma metodu kullnadigimi anlasin diye ekledim-->
+    <map name="turkeymap">
+      <!--usemap icine yazdigimizi yaziyoruz buraya-->
+      <area
+        shape="circle"
+        coords="410,305,20"
+        href="./istanbul.jpg"
+        alt="Istanbul"
+      />
+      <area
+        shape="circle"
+        coords="500,650,10"
+        href="./izmir.html"
+        alt="Izmir"
+      />
+      <area
+        shape="circle"
+        coords="700,900,10"
+        href="./antalya.jpg"
+        alt="Antalya"
+      />
+
+      <!-- coordinat siralamasi soldan sagdan 3.süde genislik-->
+    </map>
+  </body>
+</html>
