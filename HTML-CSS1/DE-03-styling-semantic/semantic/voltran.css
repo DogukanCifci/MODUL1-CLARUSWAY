@@ -15,7 +15,7 @@ header {
   background-color: #f63232;
   padding: 40px 0px;
   text-align: center;
-  position: fixed;
+  position: fixed; /*Header sayfa asagi kaydirilsa bile sayfayla beraber asagi iner */
   width: 100%;
   top: 0;
   left: 0;
@@ -82,24 +82,7 @@ article p::first-line {
   font-weight: bold;
   font-size: 1.2em;
 }
-.images {
-  text-align: center;
-  margin: 80px 0;
-  white-space: nowrap;
-}
-.images img {
-  display: inline-block;
-  list-style-type: none;
-  width: 40%;
-  margin: 20px 5%;
-  position: relative;
-}
-.images img:hover {
-  top: -4px;
-}
-.images img {
-  max-width: 100%;
-}
+
 section.section2 {
   background: #f4f4f4;
   text-align: center;
