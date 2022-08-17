@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 75%;
   margin: auto;
   background-color: rgb(196, 128, 46);
   border: solid blue 2px;
@@ -10,6 +10,7 @@ img {
   width: 320px;
   margin: 5px;
   margin-bottom: 0px;
+  margin-top: 50px;
 }
 
 .text {

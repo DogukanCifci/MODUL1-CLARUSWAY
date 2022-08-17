@@ -1,0 +1,16 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  color: blue;
+}
+
+.par {
+  color: red;
+}
+
+.center p span {
+  color: violet;
+  font-weight: bolder;
+}
