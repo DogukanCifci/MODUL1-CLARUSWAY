@@ -1,0 +1,72 @@
+table {
+  border-collapse: collapse; /*satir ve sütun arasindaki bosluklari birlesitirmek icin */
+}
+
+.liste tr:nth-child(odd) {
+  /*Tek satirlara verme */
+  background-color: bisque;
+  color: yellow;
+}
+
+td:first-child() {
+  font-weight: bolder;
+  color: red;
+}
+
+td:last-child {
+  color: purple;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+th {
+  color: blue;
+}
+
+.liste tr:nth-child(3) {
+  background-color: aquamarine;
+}
+
+/* Istedigimiz bir yerin önüne ve sonuna emoji koycaz.*/
+/*Burda bu sekilde yapmamizin sebebi emoji üzerinde renklerde boyutlarda tek basina oynama yapabilmek icin */
+/*Istersem unicodedan kodunu bulup ekleyebilirim ama bu sekilde daha rahat */
+/*Ama alttaki kod blogunun 3 satirini da kesinlikle eklemeliyim */
+
+.liste tr:nth-child(3)::after,
+.liste tr:nth-child(3)::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "🎗️"; /*Bütün emojilerde olmuyor */
+  color: red;
+}
+
+.liste tr::before,
+.liste tr::after {
+  font-family: "Font Awesome 5 Free"; /* Bu satiri */
+  font-weight: 900; /* ve bu satiri yazmazsak renk degisitremeyiz */
+  content: "😃";
+  color: purple;
+}
+
+td:hover {
+  background-color: yellowgreen;
+}
+
+tr:hover {
+  /*Bu sekilde yaparsak yukarda baskin olan tr backgroundlari degismiycek bazi lari. */
+  background-color: peru;
+}
+
+/*Onun icin daha spesifik olarak yazmam lazim */
+
+.liste tr:hover {
+  background-color: gray;
+}
+
+/* Ekledigimiz iconlarin rengini degistirmek icin i etiketini kullaniyoruz. */
+/* o i nin clasini kullandik . Yukardaki yüzme emojisi de degismesin diye. */
+
+.fa-cart-shopping {
+  color: orange;
+  font-size: 20px;
+}

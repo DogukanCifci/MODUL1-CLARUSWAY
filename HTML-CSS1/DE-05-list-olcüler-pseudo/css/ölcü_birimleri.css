@@ -25,7 +25,7 @@
   width: 50vw; 
   height: 50%;
   /* 100vw 100% ile ayni sey. !!!! AMA bu parnetinin sahip oldugu alani takmaz. Tüm ekrana göre ayarlar(Ekranin default olarak verdigi marijini dahi takmaz */ */
-  /* % üsttekine göre kullanilacak alanin %50si (default sayfanin margini dahil) */
+  /* % üsttekine göre kullanilacak alanin %50si default sayfanin margini dahil */
   /*AMA vw de default margin ya da parentin alani falan takmaz. Ekran büyüklügü neyse onun %sidir */
 }
 
