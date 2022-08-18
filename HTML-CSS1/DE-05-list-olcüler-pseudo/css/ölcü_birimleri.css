@@ -1,3 +1,5 @@
+
+
 .dede {
   background-color: orange;
   width: 50%; /* default gelen marijin ciktiktan sonra %50 yani kullanilabilir alanin 50 % */
@@ -25,4 +27,36 @@
   /* 100vw 100% ile ayni sey. !!!! AMA bu parnetinin sahip oldugu alani takmaz. Tüm ekrana göre ayarlar(Ekranin default olarak verdigi marijini dahi takmaz */ */
   /* % üsttekine göre kullanilacak alanin %50si (default sayfanin margini dahil) */
   /*AMA vw de default margin ya da parentin alani falan takmaz. Ekran büyüklügü neyse onun %sidir */
+}
+
+
+
+
+/* ----------YAZI BOYUTLARI ------------ */
+
+.anane {
+    color: red;
+    font-size: 3em;
+    /* 1em = 16px */
+}
+
+.anne {
+    font-size: 0.5em; /* Burada 1em = 16px degil. Parentta almis oldugu boyutun yarisi olacak*/
+    /*Yani suan 24px. Cünkü .anane de 3em yani 48 px vermistik */
+}
+
+.cocuk {
+    font-size: 3em; /* .annedeki boyut 24px o zaman 24 * 3 = 72 px olacak */ 
+}
+
+
+/* REM */
+
+.div1 {
+    font-size: 2rem; /*1 rem = 16px */
+}
+
+.div2 {
+    font-size: 3rem;   /* rem ile em farki burada parenttaki degerlerin bir önemi yok */
+    /*Yani burdaki deger .dvi1deki degere göre olmaz. 3rem her zaman 3 * 16px = 48px */
 }
