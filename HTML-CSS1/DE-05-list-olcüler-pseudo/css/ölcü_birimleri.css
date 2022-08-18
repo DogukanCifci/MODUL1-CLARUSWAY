@@ -1,0 +1,28 @@
+.dede {
+  background-color: orange;
+  width: 50%; /* default gelen marijin ciktiktan sonra %50 yani kullanilabilir alanin 50 % */
+  height: 50vh;
+}
+
+.baba {
+  background-color: red;
+  width: 50%; /* !!!!! Tüm ekranin 50% anlamina gelez. Dedenin sahip oldugu ekranin 50% sini alir !!!*/
+  height: 50vh;  /* Babanin basladigi yerden itibaren ekranin yarisi kadar asagi yükseklik ayarla */
+ 
+  /*Örnegin     ekranin height : 1000px
+                babanin basladigi yukardan asagiya 300.pxden basliyor
+                ekranin yarisi 500px 
+                Bundan dolayi 300.pyden sonra asahiya dogru 500px daha inecek.
+                Yani baba 800.pxde sonlanacak */
+/*Aynisi vw icinde gecerli */
+
+}
+
+.torun {
+  background-color: aqua;
+  width: 50vw; 
+  height: 50%;
+  /* 100vw 100% ile ayni sey. !!!! AMA bu parnetinin sahip oldugu alani takmaz. Tüm ekrana göre ayarlar(Ekranin default olarak verdigi marijini dahi takmaz */ */
+  /* % üsttekine göre kullanilacak alanin %50si (default sayfanin margini dahil) */
+  /*AMA vw de default margin ya da parentin alani falan takmaz. Ekran büyüklügü neyse onun %sidir */
+}
