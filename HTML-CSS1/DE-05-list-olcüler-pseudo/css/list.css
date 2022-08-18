@@ -1,0 +1,44 @@
+* {
+  font-family: "Rubik Burned", cursive;
+  font-size: 30px;
+}
+
+li {
+  background-color: rgb(211, 205, 205);
+  color: orange; /*normalde a yi da etkilemesi lazim ama a da böyle bir durum var. a icin özel olarak etiket acmamiz lazim. */
+}
+
+a {
+  color: rgb(60, 108, 23);
+}
+
+.aktif {
+  background-color: black;
+}
+
+/* Bir kod diger kodu bastiriyorsa muhtemelen baskin gelen daha spesifiktir. Yani daha detayli anlatilmistir. */
+/*Yani alttaki kod baskin gelir diye bir sey yok */
+
+/* Mesela yukardaki li yi ".menu li {} " olarak yapsak o daha spesifik olacagi icin .aktifin baskinligi gider */
+
+.aktif:hover {
+  background-color: pink;
+}
+
+li:hover {
+  background-color: red; /*Üstteki hover daha spesifik oldugu icin onun üzerine geldigimizde pembe olur kirmizi olmaz */
+  color: aqua; /*bastaki noktalarin rengi degisiyor ama yxazi degismiyor. Cünkü a kendisi icin özel bir etiket acilmasini istiyor */
+}
+
+a:hover {
+  color: white;
+}
+
+.list {
+  list-style-position: inside; /* noktalari iceri alir */
+  list-style-type: "🐣";
+}
+
+a {
+  text-decoration: none;
+}
