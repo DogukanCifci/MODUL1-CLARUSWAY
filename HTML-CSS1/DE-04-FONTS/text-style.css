@@ -1,0 +1,57 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  /* background-image: url("../assets/form1.png"); */
+}
+
+h1 {
+  color: rgba(35, 112, 189, 0.67);
+  /* red-green-blue-alpha  alpha ile saydamligi ayarlariz*/
+
+  text-decoration: line-through; /* Yazinin üstünü cizer */
+  text-decoration: underline; /* Altina cizgi ceker */
+  text-decoration: overline; /* Üstüne cizgi cizer */
+
+  text-decoration-style: dashed; /* Kesik cizgi yapar */
+  text-decoration-style: dotted; /* Noktali cizgi yapar */
+  text-decoration-style: double; /* alt alta ioki cizgi yapar */
+  text-decoration-style: wavy; /* Dalgali cizgi cizer */
+
+  text-decoration-color: rgb(69, 150, 45);
+
+  /*Yukardaki 3 farkli satirda yazdigimiz kodu tek satirda yazabiliriz. */
+
+  text-decoration: rgb(24, 132, 47) underline overline wavy 5px;
+  /* 2 tane cizgi de cizdirebiliriz. Sirasi önmeli degil */
+
+  /*text-transform: uppercase; /* Hepsini büyük yapar */
+  /* text-transform: lowercase; /* Hepsini kücük yapar */
+  text-transform: capitalize; /* Sadece bas harfleri büyük yapar */
+
+  text-align: center;
+
+  word-spacing: 15px;
+  letter-spacing: 7px;
+}
+
+p {
+  text-indent: 20px; /* Satir basi bosluk */
+
+  line-height: 30px; /* Satirlar arasi bosluk */
+}
+
+li {
+  background-color: lightcoral;
+}
+
+ul.tatli {
+  list-style-position: inside; /*liste basi nokta vb iceri alir biraz daha */
+  list-style-type: square; /*Liste basindaki isaret */
+  list-style-type: "🐰"; /*Emoji de koyabiliriz. */
+  /* list-style-image: url("../assets/img/arrow-right-long-solid.svg"); */
+  /*list-style-image baskinligi var. Kod altta olsa bile bu kabul edilir. */
+}
+
+h3.deneme {
+  text-align: center;
+  direction: rtl; /*kelimelerin siralamasini degistirmez ama diger noktalama isaretleri emnoji vb en sondaki karakterleri en basa alarak devam eder */
+}
