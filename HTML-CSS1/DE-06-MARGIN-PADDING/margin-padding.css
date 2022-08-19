@@ -33,6 +33,16 @@
   margin-right: 2rem;
 }
 
-new-btn {
+.new-btn {
   background-color: blue;
+  padding: 1rem 2rem;
+  margin-top: 10px;
+  color: white;
+  width: 20vw; /*Buraya width verdigim icin uzun bi yazi yazarsam kutucugun disina cikar */
+  /*Yukardakilerde width degeri vermedigim icin istedigim kadar yazi yazayim disari tasma olmaz. */
+  /* margin-right: auto;
+  margin-left: auto; */
+
+  margin: 2rem auto;
+  text-align: center;
 }

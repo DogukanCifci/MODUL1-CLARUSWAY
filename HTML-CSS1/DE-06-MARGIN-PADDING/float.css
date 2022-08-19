@@ -1,0 +1,27 @@
+img {
+  width: 50%;
+  float: right; /* Bunu yazdiktan sonra sola yanasir ve block elementlerde sola dogru siralanmaya baslar sigdigi kadar. */
+}
+
+.box {
+  background-color: aqua;
+}
+
+.box1 {
+  background-color: brown;
+  float: right;
+}
+
+.box2 {
+  background-color: blue;
+  float: right;
+}
+
+.box3 {
+  background-color: pink;
+}
+
+p.temizle {
+  clear: right;
+}
+/*float left ise clear da left oalcak float right ise clear da right olmak zorunda */
