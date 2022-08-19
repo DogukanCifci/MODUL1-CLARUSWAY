@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+.btn {
+  background-color: beige;
+  /* margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem; */
+
+  margin: 1rem 2rem; /*Yukari asagi 1rem margin -- sag sol 2rem margin */
+  margin: 1rem 2rem 3 rem 4rem; /* Yukardan baslayarak saat yönünde ilerler --- top-right-bottom-left */
+
+  padding: 1rem 0;
+}
+
+.span-btn {
+  /* !!!!!!!! */
+  /*inline elemanlara width ve height degerleri verilmez. */
+  /*inline elementlere sagdan ve soldan margin verilebilir. Ama yukardan ve asagidan margin verilemez. */
+  /*Inline elementlere paddign verirsek diger elementlerinin alanina girebiliyor. Bu sebeple inline elementlerde padding kullanmiyoruz */
+  /* !!!!!!!!!!!*/
+
+  background-color: aqua;
+
+  width: 300px; /* Bi degisiklik olmadi */
+  height: 300px; /* Bi degisiklik olmadi */
+  margin-top: 3rem; /* Bi degisiklik olmadi */
+  margin-bottom: 5rem; /* Bi degisiklik olmadi */
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+new-btn {
+  background-color: blue;
+}
