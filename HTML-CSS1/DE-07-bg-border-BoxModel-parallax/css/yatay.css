@@ -1,0 +1,42 @@
+.yatay-menu ul {
+  list-style-type: none;
+}
+
+.yatay-menu ul li {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 8rem;
+  height: 5rem;
+  margin: 5px;
+  display: inline-block;
+}
+/* li block oldugu icin normalde alt altalar. Ama yan yana dizilmeleri icin display inline-block yaptim. */
+/* Sadece inline demememin sebebi width height ve alt üst margin degerlerini de kabul etmesi */
+
+a {
+  text-decoration: none;
+  background-color: aqua;
+  width: 8rem; /*inline element oldugu icin kabul etmez */
+
+  display: inline-block; /* Bunu ekledigim icin artik width kabul edicek */
+}
+
+a:hover {
+  background-color: red;
+}
+
+a:active {
+  color: white;
+}
+
+/*! ACILIR MENÜ */
+
+.acilir-menu ul {
+  display: none;
+}
+
+/*acilir menu clasinin oldugu yere fareyi getirdigimizde ul söyle olsun diyip komutu girdik */
+
+.acilir-menu:hover ul {
+  display: block;
+}
