@@ -1,0 +1,43 @@
+.olcusuz-box {
+  border: 15px solid red;
+  background-color: yellowgreen;
+  margin: 20px 85px;
+  padding: 50px;
+  font-size: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.olcusuz-content {
+  border: 15px solid red;
+  background-color: yellow;
+  margin: 20px 85px;
+  padding: 50px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* ---------WIDTH ÖLCÜSÜ VERDIKTEN SONRA NASIL GÖZÜKECEK ----------------*/
+
+.box {
+  border: 15px solid red;
+  background-color: rgb(169, 205, 50);
+  margin: 20px 85px;
+  padding: 50px;
+  font-size: 2rem;
+  text-align: center;
+  box-sizing: border-box; /*Bu kodu yazarsak width ve height degeri toplam box icin atanmis olur.Toplam uizunluk ve yükseklik 300px vermis olduk  */
+  width: 300px;
+  height: 300px;
+}
+
+.content {
+  border: 15px solid red;
+  background-color: gray;
+  margin: 20px 85px;
+  padding: 50px;
+  font-size: 2rem;
+  text-align: center;
+  width: 300px; /*Burda ise sadece yazinin uzunlugu ve yüksekligi 300px olmus oldu */
+  height: 300px; /*Yazinin boyutu sinirlari asarsa tasma olur. Eger width ve height degeri vermezsek tasma olmaz kutu otomatik uzar */
+}
