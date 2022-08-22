@@ -1,0 +1,59 @@
+.container {
+  margin: 1rem;
+}
+
+.msg {
+  display: inline-block;
+  margin: 2rem;
+}
+
+.msg1 {
+  border: 3px solid red; /*Düz cizgi */
+}
+
+.msg2 {
+  border: 3px dashed red; /* Cizgili */
+}
+
+.msg3 {
+  border: 3px dotted blue; /*Noktali */
+}
+
+.msg4 {
+  border: 10px inset red;
+}
+
+.msg5 {
+  border: 5px dotted;
+  background-color: red;
+  border-radius: 5px 0 0 0; /*Sol köseden baslayarak saat yönünde gider */
+  padding: 1rem;
+}
+
+.msg6 {
+  border: 15px groove salmon;
+  background-color: hsl(127, 47%, 42%); /*denemek icin hsl kullandim */
+  outline: 10px solid cyan;
+  outline-offset: 10px; /*alttaki border cizgisiyle outline cizgisinin arasini acmak icin kullanilir */
+  border-radius: 30%;
+}
+
+.msg7 {
+  border: 15px ridge salmon;
+}
+
+.msg8 {
+  border: 3px solid gray;
+  border-radius: 100%;
+  padding: 2rem;
+  background-color: aliceblue;
+  width: 3rem;
+  height: 3rem;
+}
+
+/*Eger width degeri kücükse padding saga dogru kistili derecede kayar */
+
+.seffaf {
+  background-image: url("../img/monalisa.jpeg");
+  border: 7px solid rgba(209, 34, 34, 0.3);
+}
