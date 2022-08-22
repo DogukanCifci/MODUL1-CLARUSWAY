@@ -73,3 +73,14 @@ main .image {
   background-position: top center;
   background-image: url("../../DE-07-bg-border-BoxModel-parallax/img/monalisa.jpeg");
 }
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.copy {
+  padding: 45px 0 45px 600px;
+}
