@@ -1,0 +1,29 @@
+* {
+  text-align: center;
+  color: aqua;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("../img/monalisa.jpeg");
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: contain; /* Elinde olan büyüklüge resmi sigdirir. */
+  /* background-size: cover; /*Elinde olan büyüklüge kadar resim gelir ya da büyür. Eger kisa kalirsa fotografi keser */
+  /* background-position: bottom center; /*Eger resmin hepsi gözükmüyorsa resmin neresine odaklanacagini belirler. Ben resmin ortasini görmek istersem center center derim mesela */
+
+  background-position: top center; /* Resmin konumunu ortaya saga sola vb alir. */
+}
+
+span {
+  margin: 1rem;
+  display: inline-block;
+  background-color: gray;
+  width: 4rem;
+  height: 1rem;
+}
+
+span:hover {
+  background-color: lightgray;
+  transition: 0.3s;
+}
