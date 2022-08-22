@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  color: aliceblue;
+}
+
+.container {
+  width: 100%;
+}
+
+.baslik {
+  text-align: center;
+  font-size: 5rem;
+  background-color: red;
+  font-family: "Rubik Maze", cursive;
+}
+.liste_kisim {
+  background-color: blue;
+  width: 100%;
+  height: 60px;
+}
+
+nav ul {
+  margin-right: 45px;
+}
+
+nav ul li {
+  list-style: none;
+  float: right;
+  margin: 15px;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.5rem;
+}
+
+.clear_section1 {
+  clear: both;
+}
+
+nav ul li:hover {
+  font-size: 2rem;
+  color: red;
+  transition: 0.5s;
+  cursor: grab;
+}
+
+aside {
+  border: 4px solid red;
+  border-radius: 8px;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(195, 211, 50);
+  display: block;
+  float: left;
+}
+
+section {
+  margin: 50px 0;
+  display: inline-block;
+  font-family: "El Messiri", sans-serif;
+}
+
+article {
+  color: black;
+}
+
+main .image {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 1130px;
+  height: 753px;
+  margin-left: 293px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-image: url("../../DE-07-bg-border-BoxModel-parallax/img/monalisa.jpeg");
+}
