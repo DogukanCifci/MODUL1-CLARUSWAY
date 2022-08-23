@@ -1,0 +1,48 @@
+p {
+  height: 10vh;
+}
+
+.header1 {
+  background-image: linear-gradient(yellow, green, red);
+}
+
+/*hsl vergb ile verme */
+
+.header2 {
+  background-image: linear-gradient(
+    rgba(251, 255, 1, 0.495),
+    rgb(66, 213, 3),
+    hsl(199, 83%, 31%)
+  );
+}
+
+/* Farkli yönlere dogru verme */
+
+.header3 {
+  background-image: linear-gradient(
+    to right,
+    rgba(251, 255, 1, 0.495),
+    rgb(66, 213, 3),
+    hsl(199, 83%, 31%)
+  );
+}
+
+/* Derece Verme */
+
+.header4 {
+  background-image: linear-gradient(33deg, blue, red, yellow);
+}
+
+/* Hangi eleman yüzde kac yer kaplasin */
+
+.header5 {
+  background-image: linear-gradient(
+    rgba(251, 255, 1) 20%,
+    rgb(66, 213, 3) 50%,
+    hsl(199, 83%, 31%) 10%
+  );
+}
+
+.header6 {
+  background-image: repeating-radial-gradient(yellow, blue 20%, green 10%);
+}
