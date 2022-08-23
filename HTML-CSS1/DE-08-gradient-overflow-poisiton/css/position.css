@@ -1,0 +1,54 @@
+.box {
+  width: 130px;
+  height: 130px;
+}
+
+/*En basta bulundugu noktadan itibaren alir. * En basta 80px margin olsa bile kendi cercevesinin ilk basladigi(sol üst) 0 noktasi olarak kabul eder */
+
+.box1 {
+  background-color: aquamarine;
+  position: relative; /* 0 Noktasi sayfanin basi degil. Cünkü bodynin default olarak bir margin degeri var. Ama postion:Absolute deseydik parenta göre hareket edecegi icin sayfanin sol üst kismini sifir olarak alirdi. Margini dikkate almaz */
+  left: 32px;
+  top: 48px;
+  z-index: 3;
+}
+
+.box2 {
+  background-color: purple; /* Ilk yerlestigi nokta bir önceki div sanki hic hareket etmemis gibi. Normal noktada nereye geliyorsa onun bitis yerinden baslar. Onun icin üst üste bindi */
+  position: absolute; /*baslangic noktasini sayfanin en üst sol(yani marginsiz hali) 0 a 0 noktasi olarak alir. Cünkü bu divin parenti body */
+  left: 32px;
+  top: 48px;
+  color: white;
+  z-index: 1;
+}
+
+.box3 {
+  background-color: yellow;
+  /* Bir önceki div position: absolute oldugu icin bu div onun yerine gelir. relativdeki gibi kipirdamis olsa bile tam altina gelme olayi olmaz. */
+  position: relative;
+  left: 32px;
+  top: 35px;
+  z-index: 2;
+}
+
+/* Z INDEX EGER KUTULAR ÜST ÜSTE GELIRSE HANGISI ÜSTTE GÖZÜKSÜN ONU BELIRLEMEK ICIN KULLANILIR SAYISI EN YÜKSEK OLAN EN ÜSTTE GÖZÜKÜR*/
+
+.parent {
+  border: 5px solid black;
+  width: 150px;
+  height: 150px;
+  position: absolute; /* body bu divin parenti oldugu icin bodynin baslangicini 0 a 0 noktasi alir */
+  right: 16px;
+  top: 16px;
+}
+.box5 {
+  background-color: orange;
+  position: absolute; /*.parent divinin baslangic noktasini 0 a 0 noktasi kabul eder. Cünkü o divin icinde yer aliyor */
+  top: 10px; /* Burada position:relative de yapsak baslangic noktasi olarak .parent divinin baslangic noktasini 0 0 olarak alir. */
+  left: 10px;
+}
+
+/* Padding position:relative icin önemli. Ama absolute icin önemli degil yine ilk baslnagic noktasi 0 a 0 dir */
+
+/* !!!!!!!! POSITION:ABSOLUTE DA EGER PARENT DIVE GÖRE HAREKET ETTIRMEK ISTIYORSAK PARENT DIV ICIN DE POSITION ATAMAMIZ GEREKIYOR. */
+/* !!!!!!! YOKSA BODYI 0 A 0 NOKTASI OLARAK ALIR. YANI ICINDE BULUNDUGU DIVI BASLANGIC NOKTASI OLARAK ALMASI ICIN PARENT DIV HER TÜRLÜ BIR POSITION A SAHIP OLMALI !!!!!!!*/
