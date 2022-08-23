@@ -1,0 +1,49 @@
+.box {
+  border: 2px solid red;
+  background-color: bisque;
+  height: 80px;
+  width: 320px;
+  margin-bottom: 320px;
+}
+
+/* visible ---> Icerik kirpilmaz-. Verdigimiz ölcüden tasar */
+/* Default deger bu */
+
+.first {
+  overflow: visible;
+}
+
+/*Icerik tasarsa width height degerlkerinnde kirpilir. Kalan icerik gözükmez. */
+
+.second {
+  overflow: hidden;
+}
+
+.second:hover {
+  overflow: visible;
+}
+
+/* Eger gerekiyorsa(Tasma oluyorsa) icerigi kirpar ve alta dogur ok cikarir. Ve scroll yaparak kalan icerigi görebiliriz. Tasma olmaz */
+
+.third {
+  overflow: auto;
+}
+
+/* p ye daha büyük bir width verdik. Asagida saga dogru giden oku göstermek icin */
+
+.fourth {
+  overflow: auto;
+}
+
+/* Auto ile farki saga dogru giden bir icerik olmamasina ragmen saga dogru giden bir ok icin bosluk birakir.(Saga dogru icerik oolmasa bile) */
+/*Tasma olmazsa hem dikey icin hem yatay icin ok icin beyaz bir bosluk birakir.
+/*Eger tasma olursa da ok cikartir beyaz yere */
+
+.fifth {
+  overflow: scroll;
+}
+
+.sixth {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
