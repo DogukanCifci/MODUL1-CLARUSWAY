@@ -1,0 +1,69 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar-mor {
+  background-color: rgb(179, 47, 179);
+  height: 112px;
+}
+
+img {
+  background-color: cyan;
+  position: relative;
+  top: 24px;
+  left: 24px;
+}
+
+.menu {
+  color: white;
+  /* background-color: greenyellow; */
+  position: absolute; /* position verince yazilarin oldugu kadar yer kaplar. Tüm satiri komple kaplamaz yani */
+  right: 40px;
+  top: 60px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.navbar-turuncu {
+  text-align: center;
+  padding: 32px;
+  background-color: orange;
+  position: sticky; /*Tepe noktasi 0 a gelince sabit kal  */
+  top: 0px;
+}
+
+.navbar-turuncu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin: 0 3rem;
+}
+
+.navbar-turuncu a:hover {
+  color: white;
+}
+
+.slack {
+  /*By the way : Iconlar textmis gibi komut alabilriler. Mesela text-align:center  font-size  color vb...*/
+  color: white;
+  background-color: red;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  font-size: 24px;
+  padding: 3px;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
