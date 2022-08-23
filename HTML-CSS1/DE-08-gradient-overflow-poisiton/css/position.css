@@ -52,3 +52,25 @@
 
 /* !!!!!!!! POSITION:ABSOLUTE DA EGER PARENT DIVE GÖRE HAREKET ETTIRMEK ISTIYORSAK PARENT DIV ICIN DE POSITION ATAMAMIZ GEREKIYOR. */
 /* !!!!!!! YOKSA BODYI 0 A 0 NOKTASI OLARAK ALIR. YANI ICINDE BULUNDUGU DIVI BASLANGIC NOKTASI OLARAK ALMASI ICIN PARENT DIV HER TÜRLÜ BIR POSITION A SAHIP OLMALI !!!!!!!*/
+
+/**/
+
+/*Konumlandirdigimiz yerde kalir. Konum vermek zorunda degiliz.*/
+/*Ama konum verirsek absolute gibi body i baz alir. */
+/* O konumda sabitlenir hareket etmez */
+
+.box6 {
+  background-color: darkcyan;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.box7 {
+  background-color: blue;
+  color: white;
+  margin: 48px auto;
+  position: sticky;
+  top: 15px; /*Top dan 15 px kaldigi zaman sabitle. Yani kaydirirken top ile arasinda 10px kaldiginda sabitle demek oluyor */
+  /* position : sticky de top noktasi vermek zorundayiz Yoksa olmaz. */
+}
