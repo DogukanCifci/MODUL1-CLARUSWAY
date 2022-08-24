@@ -1,0 +1,106 @@
+.container1 div {
+  background-color: tomato;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+}
+
+.container1 {
+  background-color: aqua;
+  display: flex;
+  flex-direction: row; /*Hangi yönde dizilecegini belirleriz */
+  /*Default degeri flex-direction_row ; dur */
+
+  flex-wrap: wrap; /*Eger ekrana sigmazsa asagi kaysin anlamina gelir */
+
+  /*flex-wrap : wrap-reverse --> Sigmayan elementleri ters cevirir ve öyle alt satira indirir */
+
+  justify-content: space-evenly;
+  /*    center : Bütün elemanlari ortalar 
+        space-between : saga solar yapistirir. Arada kalanlarin arasina esit margin koyarak siralar
+        space- evenly : herkese ayni boslugu verir- bas ve son dahil */
+
+  /*! Dikey Hizalama => align-items
+  /**flex-start: Nesneler, kapsayıcının en üstünden başlayarak dizilirler.
+/**flex-end: Nesneler, kapsayıcının en altından başlayarak, yukarı doğru dizilirler.
+/**center: Nesneler ortalı bir şekilde dikey olarak sıralanırlar.
+/**baseline: yazıların yerine bakılır, sıradanlığı bozan yazı tipi göz önüne alınarak hizalanmaya başlanılır.
+/**stretch: Tüm nesneler kapsayıcı yüksekliğine eşit olacak şekilde dizilirler. */
+}
+
+.container2 div {
+  background-color: cornflowerblue;
+  width: 5rem;
+  height: 10rem;
+  margin: 1rem;
+  font-size: 2rem;
+  display: flex; /*Yazilari ortalamak icin yazinin parenti olan div'e display:flex komutunu verdik */
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  background-color: pink;
+  height: 20rem;
+  display: flex; /*divleri istedigimiz yerlere yerlestirmek icin divlerin parenti olan container'a display:Flex verdik */
+  justify-content: flex-end;
+  /* align-items: flex-end; /*Itemleri asagi hizalar */
+  align-items: baseline; /* Eger harflerin dikeydeki yerleri farkli farkliysa , aralarindan en uzakta olana göre hepsini hizalar */
+}
+
+.container2 div:nth-child(1) {
+  height: 5rem;
+}
+
+.container2 div:nth-child(2) {
+  height: 7rem;
+  padding-top: 4rem;
+}
+
+.container2 div:nth-child(3) {
+  height: 2rem;
+  padding: 0.5rem;
+}
+
+/**************+* LISTE **************************/
+ul li {
+  background-color: violet;
+  width: 4rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*burda ul kullandigimiz icin biraz saga yakinlasma var. Normal div ile yapsaydik olmayacakti */
+
+ul {
+  background-color: darkgray;
+  list-style-type: none;
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+
+  /* align-content: flex-start; */
+
+  /*!Çok satırlı verilerin dikeyde hizalanması için kullanılır.
+   bütün elemanlar yukarı çıkıyorlar. 
+   align-items: center sadece üstte kalan verileri üste yapıştırır*/
+
+  gap: 4rem 1rem;
+
+  /*?gap, flex içerisindeki elemanların dikey ve 
+  yatay boşluklarını belirlemek için kullanılabilir.
+   ilk yazılan  (satırlar arası yukarı aşağı) boşluk, 2. yazılan ise dikey (sutunlar arası, sağ sol) boşluktur */
+}
+
+/************* !!!!!!!!!!!!!!!!!! *******/
+/*  align items --> Ilk satir icin uyumlu (Ilk satir gittikten sonra diger satirlar örnegin yukari yapismaz
+
+    align-content -----> Tüm satirlar icin (hem ilk satir hem de siger alta düsen satirlar yukari yapisir */
+
+/* JUSTIFY ---------> YATAYDA HIZALAMAK ICIN
+        ALIGN ----------> DIKEYDE HIZALAMAK ICIN */
