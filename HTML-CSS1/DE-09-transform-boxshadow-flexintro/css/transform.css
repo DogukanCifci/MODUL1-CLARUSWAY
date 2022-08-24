@@ -1,0 +1,59 @@
+.yazi {
+  text-align: center;
+  width: 300px;
+  margin: 2rem auto;
+  background-color: red;
+  font-size: 2rem;
+}
+
+/************************** ROTATE ***********************/
+
+.yazi1 {
+  background-color: aqua;
+  transform: rotateX(180deg);
+  /*90 ve 270 derecede item yatay olacagi icin 2 boyuta düser ve ekranda gözükmez */
+}
+
+.yazi2 {
+  background-color: yellow;
+  transform: rotateY(180deg);
+}
+
+.yazi3 {
+  background-color: orange;
+  transform: rotate(45deg);
+}
+
+/***************************** SCALE ***************************/
+
+.yazi4 {
+  background-color: green;
+}
+
+.yazi4:hover {
+  transform: scaleX(2) scaleY(0.5);
+  /*Üzerine gelindiginde x ekseninde 2 kat büyüt y ekseninde 0.5 kat büyüt anlamina gelir */
+}
+
+.yazi5:hover {
+  transform: scale(0.5, 2);
+  /*ilk attribute x ekseni icin ikinci attribute y ekseni icin gecerli olur */
+}
+
+/******************************* TRANSITION ************************/
+
+.btn-div {
+  text-align: center;
+}
+
+button {
+  font-size: 2rem;
+  padding: 0.5rem;
+  transition: background-color 1s, color 5s, font-size 3s;
+}
+
+button:hover {
+  background-color: red;
+  color: white;
+  font-size: 4rem;
+}
