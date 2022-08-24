@@ -57,3 +57,30 @@ button:hover {
   color: white;
   font-size: 4rem;
 }
+
+/******************************* TRANSLATE ************************/
+
+.tren {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(153, 38, 153);
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: transform 5s ease-in;
+}
+
+.x:hover {
+  transform: translateX(50px);
+  /*Üstüne gelindiginde .x clasina sahip divi 50px saga tasi */
+}
+
+.y:hover {
+  transform: translateY(50px);
+}
+
+.xy:hover {
+  transform: translate(50px, -50px);
+  /* ilki x ekseni ikincisi y ekseni */
+}
