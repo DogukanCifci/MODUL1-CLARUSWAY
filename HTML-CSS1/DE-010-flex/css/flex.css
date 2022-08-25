@@ -104,3 +104,29 @@ ul {
 
 /* JUSTIFY ---------> YATAYDA HIZALAMAK ICIN
         ALIGN ----------> DIKEYDE HIZALAMAK ICIN */
+
+/************************* CONTAINER4 ERTESI GÜN DEVAM DERSI FLEX:GROW *******************/
+
+.container4 {
+  background-color: red;
+  display: flex;
+}
+
+.container4 div {
+  background-color: yellow;
+  width: 5rem;
+  margin: 1rem;
+}
+
+.container4 div:nth-child(1) {
+  flex-grow: 3;
+}
+.container4 div:nth-child(2) {
+  flex-grow: 0;
+}
+.container4 div:nth-child(3) {
+  flex-grow: 2;
+}
+.container4 div:nth-child(4) {
+  flex-grow: 1;
+}

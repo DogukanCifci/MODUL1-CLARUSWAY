@@ -1,0 +1,73 @@
+@import "./variable.css";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+  font-family: var(--ff-monteserrat);
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+nav .left,
+nav .middle,
+nav .right {
+  flex-grow: 1; /*Bunu kesinlikle en az bir cocukta demek zorundayim hepsinin esit olarak yayilmasi icin.Daha sonra istersem kalan diger elemanlara 2 3 verebilirim*/
+  flex-basis: 0; /*Büyürken ve kücülürken Herkese esit davran boyuta önem verme */
+}
+
+nav .left {
+  background-color: var(--gri-6);
+  border: 1px solid black;
+  box-shadow: var(--açık-gölge);
+  display: flex;
+  align-items: center;
+}
+
+nav .middle {
+  background-color: var(--mavi-10);
+  box-shadow: var(--koyu-gölge);
+  border-radius: 10px;
+  text-align: center;
+  flex-grow: 2; /*Burda istersem degistirebilirim tekrar */
+}
+
+nav .item {
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px;
+  color: black;
+}
+
+nav .item:hover {
+  border-radius: 10px;
+  color: white;
+  background-color: var(--mavi-6);
+  transition: background-color 4s, color 1s, border-radius 3s;
+}
+
+nav .right {
+  background-color: var(--mavi-7);
+  box-shadow: var(--açık-gölge);
+  border: 1px solid red;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  /* font-size: 40px; ----> Iconlari burdan yerine html sayfasinda i nin icinde fax2 yaptik */
+  gap: 3rem 1rem;
+}
+
+nav .right i {
+  color: black;
+}
+
+nav .right i:hover {
+  font-size: 60px; /*Kapsayan divin de berbaer büyümesi icin kullanilir */
+  transition: 2s;
+  /*transform : scale(2, 2) ---> Yaparsak onu kapsayan div büyümez. Sadece iconlarin kendisi büyür */
+  /*Ama font-size: 60px olarak verirsek onu kapsayan div de iconla beraber büyür */
+}
