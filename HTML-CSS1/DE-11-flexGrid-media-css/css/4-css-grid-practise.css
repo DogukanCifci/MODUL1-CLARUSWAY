@@ -1,0 +1,56 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* <---  Bunun uzun yazilimi 1fr 1fr 1fr 1fr; /* Ekrani 4 esit parcaya ayir demek */
+
+  grid-template-rows: repeat(4, 15vh) 15vh 15vh;
+  /* 4 tane parcaya ayir. ekranin görünen kismini 15vh i kadar kaplasin her bir parca */ /*rowslarda fr kullanimi yok */
+  /*2.15vh 5.satiri 3. 15vh 6.satiri komple temsil eder.*/
+  /*Bunun yerine direk (4, 15vh) yerine (6,15vh) yazabilirim */
+
+  gap: 10px 15px;
+
+  /*Her bir elaminin arasini üst alt 10px sag sol 15px ac */
+  /*margin olsa her biri vercegi icin 30 px falan olacakti */
+}
+
+.parca {
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+.parca1 {
+  grid-column-start: 1;
+  grid-column-end: 3; /*Pythondaki mantik gibi, baslangic dahil ama bitimi dahil degil */
+  /*1.ve 2. sütunu birbiryle birlestir.
+  colspan gibi */
+  /*Diger divi yemez. Sadece ileri iter. tabledaki colspan rowspan ayni matnik */
+
+  /*Tasan kisim icin bi daha yukarda gidip (4,15vh)'tan sonra bir daha 15.vh ekledik */
+}
+
+.parca4 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.parca6 {
+  background-color: rgb(215, 133, 147);
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  /*alternative */
+
+  grid-area: 2 / 3 / span 2 / span 2;
+  /*--->2.satir 3. sütundaki elemana gel
+    ----> Daha sonra belirledigimiz baslangic parcasindan 2 satir asagiya dogru birlestir 
+    ----->Daha sonra belirledigimiz baslangic parcasindan 2 sütun saga dogru birlestir.*/
+}
+
+.parca9 {
+  background-color: aqua;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column: 2; /*Bunu yazmazsam parca normalde 2. sütunda olmasina ragmen ilk sütuna alir. Onun önüne gectik */
+}
