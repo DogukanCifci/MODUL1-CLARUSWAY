@@ -17,6 +17,9 @@
 .parca {
   background-color: yellow;
   border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .parca1 {
@@ -27,6 +30,7 @@
   /*Diger divi yemez. Sadece ileri iter. tabledaki colspan rowspan ayni matnik */
 
   /*Tasan kisim icin bi daha yukarda gidip (4,15vh)'tan sonra bir daha 15.vh ekledik */
+  background-color: blueviolet;
 }
 
 .parca4 {
@@ -35,7 +39,8 @@
 }
 
 .parca6 {
-  background-color: rgb(215, 133, 147);
+  background-color: pink;
+
   grid-row-start: 2;
   grid-row-end: 4;
   grid-column-start: 3;
@@ -47,6 +52,8 @@
     ----> Daha sonra belirledigimiz baslangic parcasindan 2 satir asagiya dogru birlestir 
     ----->Daha sonra belirledigimiz baslangic parcasindan 2 sütun saga dogru birlestir.*/
 }
+
+/* EGER PARCA 8 I sütun olarak birlestirmek istersek 4. sütunu komple asagiya dogru iter. Cünkü alt tarafta parca9u 2.sütuna sabitledik */
 
 .parca9 {
   background-color: aqua;
