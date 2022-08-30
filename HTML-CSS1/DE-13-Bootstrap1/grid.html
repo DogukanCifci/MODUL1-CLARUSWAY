@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GRID</title>
     <link rel="stylesheet" href="./bootstrap-deneme.css" />
 
     <link
@@ -14,8 +14,8 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="container">
+  <body class="text-center text-white">
+    <div class="container-fluid">
       <!--1. Satir---2 esit uzunluktaki sütundan olusuyor-->
       <div class="row m-1">
         <div class="col-6 bg-success">6</div>
@@ -37,9 +37,11 @@
 
       <!-- 3. Satir 3 esit boyda sütuna sahip olacak-->
       <div class="row m-1">
-        <div class="col-4 bg-secondary">4</div>
-        <div class="col-4 bg-danger">4</div>
-        <div class="col-4 bg-secondary">4</div>
+        <div class="col bg-secondary mx-1">4</div>
+        <div class="col bg-danger mx-1">4</div>
+        <div class="col bg-secondary mx-1">4</div>
+
+        <!-- Burda margin verebiliriz. Asagi kayma olmaz. Cünkü col-sayi vermedik- sadece col yazarsak ne kadar margin versek de kutu koysak da o satira esit sekilde sigdirir-->
       </div>
     </div>
 
