@@ -52,20 +52,6 @@ body {
   box-sizing: border-box;
 }
 
-.article {
-  display: flex;
-}
-.article .article1, .article .article2 {
-  width: 50%;
-  height: 200px;
-  background-color: rgb(74, 74, 180);
-  border: 1px solid black;
-  margin-left: 5px;
-}
-.article .article2 {
-  background-color: cadetblue;
-}
-
 /*Header kismi components icinde oradan import ettik.Bölümlendirip temiz bir kod olusturabilmek icin */
 /*Ayni Python da fonsiyon cagirma mantigi */
 /*box Cagirmada kullanmak icin rastegele verdigimiz bir fonksiyon adi */
@@ -108,6 +94,20 @@ body {
   border-radius: 5px;
   margin: 10px;
   color: white;
+}
+
+.article {
+  display: flex;
+}
+.article .article1, .article .article2 {
+  width: 50%;
+  height: 200px;
+  background-color: rgb(74, 74, 180);
+  border: 1px solid black;
+  margin-left: 5px;
+}
+.article .article2 {
+  background-color: cadetblue;
 }
 
 /* IF-ELSE DÖNGÜSÜ KISMI */
@@ -153,19 +153,6 @@ footer p {
 /* $renk e bir sayi atadik ve altta background color kisminda sayi for döngüsü icinde arta arta gittigi icin rengin tonlari acilarak gitti her seferinde */
 /*to yerine through yazarsam sonuncu elemani da dahil et anlamina gelir */
 /*from 1 through 5 ===== from 1 to 6 */
-/*Bunu javascriptte dinamik bir yapi olusturmak icin kullanacagiz */
-.container.pink {
-  background-color: rgb(194, 63, 142);
-}
-
-.container.green {
-  background-color: rgb(42, 183, 42);
-}
-
-.container.blue {
-  background-color: rgb(17, 17, 203);
-}
-
 /* ----------------------------LISTE YAPISI ---------------------------- */
 .social1 {
   background-color: #990000;
@@ -188,5 +175,17 @@ footer p {
 }
 
 /*Yukarda baskin kod oldugu icin alltaki kutular bu renge bürünmüyor ama denedim kod calisiyor yukardaki kodu silince */
+/*Bunu javascriptte dinamik bir yapi olusturmak icin kullanacagiz */
+.container.pink {
+  background-color: rgb(194, 63, 142);
+}
+
+.container.green {
+  background-color: rgb(42, 183, 42);
+}
+
+.container.blue {
+  background-color: rgb(17, 17, 203);
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,10 @@
 @import "../abstracts/variables";
 
+/*Header kismi components icinde oradan import ettik.Bölümlendirip temiz bir kod olusturabilmek icin */
+/*Ayni Python da fonsiyon cagirma mantigi */
+/*box Cagirmada kullanmak icin rastegele verdigimiz bir fonksiyon adi */
+/*Ayni özellikteki tekrar eden elementlerin ortak özelliklerini bu fonksiyona atadik. Ve buradan cagirdik. Degismesini istedigimiz özellikleri fonksiyon icine attribute olarak verdik. Disardan özellikleri oraya gönderdik */
+
 @mixin box($backColor, $fontColor) {
   background-color: $backColor;
   width: 25%;
@@ -8,4 +13,23 @@
   border-radius: 5px;
   margin: 10px;
   color: $fontColor;
+}
+
+.cards {
+  display: flex;
+  .card1 {
+    @include box($primaryColor, white);
+  }
+
+  .card2 {
+    @include box(pink, black);
+  }
+
+  .card3 {
+    @include box(green, yellow);
+  }
+
+  .card4 {
+    @include box(black, white);
+  }
 }

@@ -1,0 +1,21 @@
+@import "./variables";
+
+/*FOR DÖNGÜSÜ */
+
+.social-media-boxes {
+  display: flex;
+  @for $i from 1 to 6 {
+    .social#{$i} {
+      width: 20%;
+      height: 50px;
+      $renk: ($i + 10) * 5;
+      background-color: rgb($renk, $renk, $renk);
+      font-size: $i * 10px;
+    }
+  }
+}
+
+/* $renk e bir sayi atadik ve altta background color kisminda sayi for döngüsü icinde arta arta gittigi icin rengin tonlari acilarak gitti her seferinde */
+
+/*to yerine through yazarsam sonuncu elemani da dahil et anlamina gelir */
+/*from 1 through 5 ===== from 1 to 6 */

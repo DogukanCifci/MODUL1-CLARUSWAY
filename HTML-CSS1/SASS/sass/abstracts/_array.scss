@@ -1,0 +1,13 @@
+@import "./variables";
+
+/* ----------------------------LISTE YAPISI ---------------------------- */
+
+$renkler1: #990000, #55004e, #0fa8a1, #121456, #64c217;
+
+@for $i from 1 through length($renkler1) {
+  .social#{$i} {
+    background-color: nth($renkler1, $i);
+  }
+}
+
+/*Yukarda baskin kod oldugu icin alltaki kutular bu renge bürünmüyor ama denedim kod calisiyor yukardaki kodu silince */

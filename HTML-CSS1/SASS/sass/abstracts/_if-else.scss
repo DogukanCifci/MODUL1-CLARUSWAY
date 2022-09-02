@@ -1,0 +1,15 @@
+/* IF-ELSE DÖNGÜSÜ KISMI */
+@import "../abstracts/variables";
+$mode: 1;
+
+footer {
+  p {
+    @if $mode==2 {
+      background-color: lightcoral;
+    } @else if $mode==1 {
+      background-color: green;
+    } @else {
+      background-color: wheat;
+    }
+  }
+}
