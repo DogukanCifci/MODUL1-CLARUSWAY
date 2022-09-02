@@ -1,0 +1,35 @@
+@import "../abstracts/variables";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primaryColor;
+
+  img {
+    border: $myBorder;
+    width: 80px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px;
+  }
+
+  .nav {
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        padding: 15px;
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: $headerFontSize;
+
+          &:hover {
+            background-color: #cc6699;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

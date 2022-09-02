@@ -1,0 +1,11 @@
+@import "../abstracts/variables";
+
+@mixin box($backColor, $fontColor) {
+  background-color: $backColor;
+  width: 25%;
+  height: 200px;
+  border: $myBorder;
+  border-radius: 5px;
+  margin: 10px;
+  color: $fontColor;
+}

@@ -1,0 +1,169 @@
+@charset "UTF-8";
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+}
+header img {
+  border: 1px solid black;
+  width: 80px;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px;
+}
+header .nav ul {
+  display: flex;
+  list-style: none;
+}
+header .nav ul li {
+  padding: 15px;
+}
+header .nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+header .nav ul li a:hover {
+  background-color: #cc6699;
+  border-radius: 5px;
+}
+
+.banner {
+  display: flex;
+  background-color: #cc6699;
+}
+.banner .left {
+  margin: 10px;
+  align-items: center;
+}
+.banner .left button {
+  padding: 10px;
+  font-weight: 600;
+  border: 3px solid cadetblue;
+  border-radius: 10px;
+}
+.banner img {
+  width: 30%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.article {
+  display: flex;
+}
+.article .article1, .article .article2 {
+  width: 50%;
+  height: 200px;
+  background-color: rgb(74, 74, 180);
+  border: 1px solid black;
+  margin-left: 5px;
+}
+.article .article2 {
+  background-color: cadetblue;
+}
+
+/*Header kismi components icinde oradan import ettik.Bölümlendirip temiz bir kod olusturabilmek icin */
+/*Ayni Python da fonsiyon cagirma mantigi */
+/*box Cagirmada kullanmak icin rastegele verdigimiz bir fonksiyon adi */
+/*Ayni özellikteki tekrar eden elementlerin ortak özelliklerini bu fonksiyona atadik. Ve buradan cagirdik. Degismesini istedigimiz özellikleri fonksiyon icine attribute olarak verdik. Disardan özellikleri oraya gönderdik */
+.cards {
+  display: flex;
+}
+.cards .card1 {
+  background-color: cadetblue;
+  width: 25%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+}
+.cards .card2 {
+  background-color: pink;
+  width: 25%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  color: black;
+}
+.cards .card3 {
+  background-color: green;
+  width: 25%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  color: yellow;
+}
+.cards .card4 {
+  background-color: black;
+  width: 25%;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+}
+
+/* IF-ELSE DÖNGÜSÜ KISMI */
+footer p {
+  background-color: green;
+}
+
+/*FOR DÖNGÜSÜ */
+.social-media-boxes {
+  display: flex;
+}
+.social-media-boxes .social1 {
+  width: 20%;
+  height: 50px;
+  background-color: rgb(55, 55, 55);
+  font-size: 10px;
+}
+.social-media-boxes .social2 {
+  width: 20%;
+  height: 50px;
+  background-color: rgb(60, 60, 60);
+  font-size: 20px;
+}
+.social-media-boxes .social3 {
+  width: 20%;
+  height: 50px;
+  background-color: rgb(65, 65, 65);
+  font-size: 30px;
+}
+.social-media-boxes .social4 {
+  width: 20%;
+  height: 50px;
+  background-color: rgb(70, 70, 70);
+  font-size: 40px;
+}
+.social-media-boxes .social5 {
+  width: 20%;
+  height: 50px;
+  background-color: rgb(75, 75, 75);
+  font-size: 50px;
+}
+
+/* $renk e bir sayi atadik ve altta background color kisminda sayi for döngüsü icinde arta arta gittigi icin rengin tonlari acilarak gitti her seferinde */
+/*to yerine through yazarsam sonuncu elemani da dahil et anlamina gelir */
+/*from 1 through 5 ===== from 1 to 6 */
+/*Bunu javascriptte dinamik bir yapi olusturmak icin kullanacagiz */
+.container.pink {
+  background-color: rgb(194, 63, 142);
+}
+
+.container.green {
+  background-color: rgb(42, 183, 42);
+}
+
+.container.blue {
+  background-color: rgb(17, 17, 203);
+}
+
+/*# sourceMappingURL=style.css.map */

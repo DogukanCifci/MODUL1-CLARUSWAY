@@ -1,0 +1,16 @@
+@import "./variables";
+.article {
+  display: flex;
+  .article1 {
+    width: 50%;
+    height: 200px;
+    background-color: $secondaryColor;
+    border: $myBorder;
+    margin-left: 5px;
+  }
+
+  .article2 {
+    @extend .article1;
+    background-color: $primaryColor;
+  }
+}

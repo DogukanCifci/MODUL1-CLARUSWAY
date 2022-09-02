@@ -1,0 +1,78 @@
+@import "./abstracts/variables";
+@import "./components/header";
+@import "./components/banner";
+@import "./base/reset";
+@import "./abstracts/mixin";
+@import "./abstracts/extend";
+/*Header kismi components icinde oradan import ettik.Bölümlendirip temiz bir kod olusturabilmek icin */
+/*Ayni Python da fonsiyon cagirma mantigi */
+/*box Cagirmada kullanmak icin rastegele verdigimiz bir fonksiyon adi */
+/*Ayni özellikteki tekrar eden elementlerin ortak özelliklerini bu fonksiyona atadik. Ve buradan cagirdik. Degismesini istedigimiz özellikleri fonksiyon icine attribute olarak verdik. Disardan özellikleri oraya gönderdik */
+.cards {
+  display: flex;
+  .card1 {
+    @include box($primaryColor, white);
+  }
+
+  .card2 {
+    @include box(pink, black);
+  }
+
+  .card3 {
+    @include box(green, yellow);
+  }
+
+  .card4 {
+    @include box(black, white);
+  }
+}
+
+/* IF-ELSE DÖNGÜSÜ KISMI */
+$mode: 1;
+
+footer {
+  p {
+    @if $mode==2 {
+      background-color: lightcoral;
+    } @else if $mode==1 {
+      background-color: green;
+    } @else {
+      background-color: wheat;
+    }
+  }
+}
+
+/*FOR DÖNGÜSÜ */
+
+.social-media-boxes {
+  display: flex;
+  @for $i from 1 to 6 {
+    .social#{$i} {
+      width: 20%;
+      height: 50px;
+      $renk: ($i + 10) * 5;
+      background-color: rgb($renk, $renk, $renk);
+      font-size: $i * 10px;
+    }
+  }
+}
+
+/* $renk e bir sayi atadik ve altta background color kisminda sayi for döngüsü icinde arta arta gittigi icin rengin tonlari acilarak gitti her seferinde */
+
+/*to yerine through yazarsam sonuncu elemani da dahil et anlamina gelir */
+/*from 1 through 5 ===== from 1 to 6 */
+
+$temaRengi: (
+  "pink": rgb(194, 63, 142),
+  "green": rgb(42, 183, 42),
+  "blue": rgb(17, 17, 203),
+);
+
+/*Bunu javascriptte dinamik bir yapi olusturmak icin kullanacagiz */
+@each $i, $renk in $temaRengi {
+  .container {
+    &.#{$i} {
+      background-color: $renk;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../abstracts/variables";
+.banner {
+  display: flex;
+  background-color: #cc6699;
+
+  .left {
+    margin: 10px;
+    align-items: center;
+
+    button {
+      padding: 10px;
+      font-weight: 600;
+      border: 3px solid cadetblue;
+      border-radius: 10px;
+    }
+  }
+
+  img {
+    width: 30%;
+  }
+}
