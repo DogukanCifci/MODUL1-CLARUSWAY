@@ -16,7 +16,21 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1rem;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $font-family;
     color: $primary-color;
+    @include transition(1s);
+    text-decoration: none;
+    color: $text-color;
+
+    //@mixin kisminda transition adi altinda bir fonksyion olusturdum. Orda süreyi attribute olarak ayarladim ve burda sadece süreyi yazmam yeterli oldu
+
+    &:hover {
+      color: blue;
+    }
+
+    // nav__link--active
+    &--active {
+      color: $secondary-color;
+    }
   }
 }

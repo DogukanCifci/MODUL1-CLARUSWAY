@@ -1,0 +1,18 @@
+// --------MIXIN -----
+//@include ile kullaniliyor
+@mixin transition($second) {
+  transition: all $second;
+}
+
+@mixin bgImage($height) {
+  width: 100%;
+  height: $height; //height boyutunu _home.scssten cagirdim @ include ile
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("../../images/model-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}

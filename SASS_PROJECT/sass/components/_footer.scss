@@ -1,0 +1,39 @@
+// -----FOOTER --
+
+.link-style {
+  a {
+    padding: 0.4rem;
+    @include transition(1s);
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+.horizontal {
+  @extend .link-style; //Yukardaki a yi cagirdim
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.vertical {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 1rem;
+    left: 20px;
+    @extend .link-style; //bütün footerlari bu sekilde ugrasmadan style verebiliriz
+  }
+  .copyright {
+    position: fixed;
+    bottom: 4rem;
+    right: 0;
+    transform: rotate(90deg);
+    //  writing-mode: vertical-lr;
+  }
+}
