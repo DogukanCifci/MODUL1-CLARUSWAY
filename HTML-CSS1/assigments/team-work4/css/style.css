@@ -1,78 +1,40 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 body {
-  position: relative;
-  z-index: 0;
+  margin: 0;
 }
 .container {
-  display: flex;
-  background-color: wheat;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: -11;
-}
-
-.ic-container {
-  width: 100%;
-  height: 90%;
-
-  display: flex;
-  flex-direction: column;
-
-  margin-bottom: 240px;
-}
-.container__img {
-  width: 200px;
+  width: 60%;
   margin: 0 auto;
-  position: relative;
-  top: 0;
-  z-index: 30;
+  margin-top: 8rem;
 }
-.container__img img {
+main {
+  background-color: rgb(173, 35, 35);
+  text-align: center;
+  border-radius: 15px;
+  padding-bottom: 30px;
+}
+img {
   width: 200px;
-  height: 200px;
+  border-radius: 50%;
   border: 4px solid black;
 
-  border-radius: 50%;
+  display: inline-block;
+  margin-top: -80px;
 }
 
-.yazi {
-  margin-top: 20px;
-  text-align: center;
-  font-size: 3.5rem;
-  line-height: 80px;
-  font-weight: 900;
-  color: rgb(40, 39, 39);
+.yazi p {
+  font-size: 3rem;
+  color: rgb(52, 51, 51);
 }
 
-.dis-container {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid black;
-  width: 70%;
-  height: 80vh;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(206, 54, 54);
-  border-radius: 30px;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
 .sari {
   color: yellow;
 }
 
 .alt-yazi {
-  position: relative;
+  text-align: center;
+  font-size: 1.8rem;
+  color: rgb(105, 25, 105);
 }
