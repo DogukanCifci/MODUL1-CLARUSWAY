@@ -37,3 +37,14 @@
     //  writing-mode: vertical-lr;
   }
 }
+
+.middle {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+  @extend .link-style;
+}
